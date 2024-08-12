@@ -7,7 +7,7 @@ import {
   UserType,
 } from "../../backend/src/shared/types";
 import { BookingFormData } from "./forms/BookingForm/BookingForm";
-const API_BASE_URL = "http://127.0.0.1:7000";
+const API_BASE_URL = "https://travel-management-api-kjng.onrender.com";
 
 export const fetchCurrentUser = async (): Promise<UserType> => {
   const response = await fetch(`${API_BASE_URL}/api/users/me`, {
